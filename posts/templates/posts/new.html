@@ -1,0 +1,167 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block content %}
+<!-- <h1>레시피 생성</h1>
+<form action="{% url 'posts:new' %}" method="POST" enctype="multipart/form-data">
+    {% csrf_token %}
+    <label>제목</label><br>
+    <input type="text" name="title"><br><br>
+
+    <label>이미지</label><br>
+    <input type="file" name="image"><br><br>
+    
+    <label>요리 시간</label><br>
+    <input type="number" name="time"><br><br>
+    
+    <label>과정</label><br>
+    <input type="textarea" name="content"><br><br>
+    
+    <input type="submit" class="btn btn-primary" value="등록">
+
+</form> -->
+
+
+<br><br><br>
+
+<!-- Titlebar
+================================================== -->
+<section id="titlebar">
+	<!-- Container -->
+	<div class="container">
+		<div class="eight columns">
+			<h2>레시피 생성</h2>
+		</div>
+
+	</div>
+	<!-- Container / End -->
+</section>
+
+<br>
+<!-- Content
+================================================== -->
+<div class="container">
+	<div class="sixteen columns">
+		<div class="submit-recipe-form">
+            <form action="{% url 'posts:new' %}" method="POST" enctype="multipart/form-data">
+                {% csrf_token %}
+
+
+                <!-- Recipe Title -->
+                <h4>레시피 이름</h4>
+                <input class="search-field" type="text" placeholder="" name="title"/>
+                <div class="clearfix"></div>
+                
+                <div class="margin-top-25"><br><br></div>
+
+
+                <!-- Choose Category -->
+                <div class="select">
+                    <h4>카테고리 선택</h4>
+                    
+                    <select data-placeholder="Choose Category" class="chosen-select-no-single" name="category">
+                        <option value="All">All</option>
+                        <option value="Breakfast">Breakfast</option>
+                        <option value="Lunch">Lunch</option>
+                        <option value="Beverages">Beverages</option>
+                        <option value="Appetizers">Appetizers</option>
+                        <option value="Soups">Soups</option>
+                        <option value="Salads">Salads</option>
+                        <option value="Beef">Beef</option>
+                        <option value="Poultry">Poultry</option>
+                        <option value="Pork">Pork</option>
+                        <option value="Seafood">Seafood</option>
+                        <option value="Vegetarian">Vegetarian</option>
+                        <option value="Vegetables">Vegetables</option>
+                        <option value="Desserts">Desserts</option>
+                        <option value="Canning / Freezing">Canning / Freezing</option>
+                        <option value="Breads">Breads</option>
+                        <option value="Holidays">Holidays</option>
+                    </select>
+                </div>
+
+
+                <div class="margin-top-25"><br><br></div>
+
+                <!-- Upload Photos -->
+                <h4>사진 업로드</h4>
+
+                <input type="file" name="image"><br><br>
+
+                <div class="margin-top-15"><br><br></div>
+
+                <!-- Ingredients -->
+                <fieldset class="addrecipe-cont">
+                    <h4>재료</h4>
+
+                    <input name="ingredient" tabindex="5" type="text" placeholder="Name of ingredient" /> </td>                            
+
+                    
+                </fieldset>
+
+
+                <div class="margin-top-25"><br><br></div>
+
+
+                <!-- Directions -->
+                <h4>요리 과정</h4>
+                <textarea class="WYSIWYG" name="content" cols="40" rows="3" spellcheck="true"></textarea>
+
+
+                <div class="margin-top-25 clearfix"><br><br></div>
+
+
+                <!-- Additional Informations -->
+                <h4>추가 정보</h4>
+
+                <fieldset class="additional-info">
+                    <label>요리 시간</label><br>
+                    <input type="number" name="time"><br><br>
+
+                    <label for="4">난이도</label>
+                    <select data-placeholder="Choose Level" class="chosen-select-no-single" name="level">
+                        <option value="1">&nbsp;</option>
+                        <option value="2">쉬움</option>
+                        <option value="3">중간</option>
+                        <option value="4">어려움</option>
+                    </select>
+                </fieldset>
+
+                <div class="margin-top-30"></div>
+                <input type="submit" class="btn btn-primary" value="등록">
+            </form>
+		</div>
+	</div>
+</div>
+<!-- Container / End -->
+
+
+<div class="margin-top-50"><br><br></div>
+
+</div>
+<!-- Wrapper / End -->
+
+
+
+<!-- Java Script
+================================================== -->
+<script src="scripts/jquery-1.11.0.min.js"></script>
+<script src="scripts/jquery-migrate-1.2.1.min.js"></script>
+<script src="scripts/jquery.superfish.js"></script>
+<script src="scripts/jquery.royalslider.min.js"></script>
+<script src="scripts/responsive-nav.js"></script>
+<script src="scripts/hoverIntent.js"></script>
+<script src="scripts/isotope.pkgd.min.js"></script>
+<script src="scripts/chosen.jquery.min.js"></script>
+<script src="scripts/jquery.tooltips.min.js"></script>
+<script src="scripts/jquery.magnific-popup.min.js"></script>
+<script src="scripts/jquery.pricefilter.js"></script>
+<script src="scripts/jquery-ui.min.js"></script>
+<script src="scripts/custom.js"></script>
+
+
+<!-- WYSIWYG Editor -->
+<script type="text/javascript" src="scripts/jquery.sceditor.bbcode.min.js"></script>
+<script type="text/javascript" src="scripts/jquery.sceditor.js"></script>
+
+
+{% endblock %}

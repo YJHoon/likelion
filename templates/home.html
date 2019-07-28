@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+{% block content %}
+
+<a href="{% url 'posts:new' %}">레시피 생성</a>
+
+<div class="card-columns">
+    {% for post in posts %}
+    <div class="card">
+        <blockquote class="blockquote mb-0 card-body"> 
+            {% if post.image %}
+            <a href="{% url 'posts:show' post.pk %}">
+                <img src="{{ post.image.url }}"  width="335pxs" height="200px">
+            </a>
+            {% endif %}
+            <div class="card-body">
+                <h3 class="card-title"><a href="{% url 'posts:show' post.pk %}">{{ post.title }}</a></h3>
+                <p class="card-text">요리시간 : {{ post.time }}분</p>
+            </div>
+        </blockquote>
+    </div>
+    {% endfor %}
+</div>
+
+{% endblock %}

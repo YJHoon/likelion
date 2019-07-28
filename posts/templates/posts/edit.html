@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block content %}
+<form action="{% url 'posts:update' posts.pk %}" method="POST" enctype="multipart/form-data">
+    {% csrf_token %}
+    <label>제목</label><br>
+    <input type="text" name="title" value="{{ posts.title }}"><br><br>
+
+    <label>내용</label><br>
+    <textarea name="content">{{ posts.content }}</textarea>
+
+    <label>이미지</label>
+    <input type="file" name="image"><br><br>
+
+    <input type="submit" class="btn btn-primary" value="등록">
+
+</form>
+{% endblock %}
