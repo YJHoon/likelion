@@ -2,7 +2,7 @@ from django.shortcuts import render, redirect, get_object_or_404
 from .models import Post
 
 def hobby(request):
-    return render(request, 'posts/hobby.html')
+    return render(request, 'posts/climbing.html')
 
 def new(request):
     if request.method == "POST":

@@ -1,0 +1,397 @@
+{% load staticfiles %}
+{% block content %}
+    
+    <div class="hero-image">
+  <div class="hero-text">
+    <h1 class="heading" style="font-size:70px; color:white">클라이밍 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp원해?</h1>
+    <h3></h3>
+  </div>
+</div>
+    <br>
+    <br>
+
+    <section class="aboutclimbing" id="aboutclimbing"></section>
+        <div class="container">
+            <div class="about" id="about">
+                <h1 class="heading" style="font-size: 48px">클라이밍에 대해</h1><br>
+                <p style="font-size: 30px">클라이밍하면 어떤 장면이 떠올라? 아마 대부분 사람들은 이렇게 암벽등반 하는 모습이 떠오를 거야.<br>
+                <img src = "static/nice5.jpg" align="left" width="500px" height="300px" margin=auto>
+                <img src = "static/nice6.jpg" float= "right" width="500px" height="300px" margin=auto><br clear=left><br>
+                그런데 이번에 내가 다룰 주제는 암벽등반이 아니야. 바로 최근에 올림픽 정식종목으로 채택된 스포츠클라이밍이지. TV 돌려보면서 이런 장면 봤지?<br>
+                    <img src = "static/nice2.jpg" align="left" width="500px" height="300px" margin=auto>
+                    <img src = "static/nice3.jpg" float="right" width="500px" height="300px" margin=auto><br clear=left><br>
+                    이게 바로 스포츠 클라이밍이야.
+                최근에 김자인 선수가 세계권 1위를 하면서 유명해지긴 했는데 아직 어떤 식으로 경기가 진행되고 종목이 나뉘는지 모르는 사람이 많을거야. 그래서 그 점에 대해 소개 해보려 해.<br>
+                <img src = "static/nice4.jpg" align="left" width="500px" height="300px">
+                <img src = "static/picture.jpg" float="right" width="500px" height="300px"><br clear=left>
+                </p>
+            </div>
+            <br>
+            <hr>
+        </div>
+    <br>
+    <br>
+    
+    <section id="main">
+        <div class="container">
+            <div id="kind">
+                <h1 class="heading" style="font-size:48px">스포츠 클라이밍은 어떤 종목이 있을까?</h1><br>
+          <div class="row">
+                <div class="column-66"><br><br>
+                  <h1 class="xlarge-font"><b>볼더링</b></h1>
+                  <h1 class="large-font" style="color:MediumSeaGreen;"><b>클라이밍을 즐기고 싶어?</b></h1>
+                  <p style ="font-size:20px"><span style="font-size:36px">볼더링에 도전해봐.</span>볼더링은 안전장비 없이 5m 정도의 높이를 오르는 종목이야. 다른 암벽들과 비교해서 겨우 5m라고 무시하면 안 돼. 그만큼 올라갈 수 있는 경우의 수가 다양하고 잡기가 어려운 홀드를 주는 경우가 많아. 하지만 난이도 조절이 쉽기 때문에 대부분 입문자들은 볼더링부터 시작하지.</p>
+                </div>
+                <div class="column-33">
+                    <img src="{% static 'bordering.jpg' %}" width="335" height="auto"><br>
+                    <img src="{% static 'nice9.jpg' %}" width="335" height="200px">
+                </div>
+              </div>
+            </div>
+            
+            <div class="container">
+              <div class="row">
+                <div class="column-33">
+                  <img src="{% static 'lead.jpg' %}" width="335" height="auto"><br>
+                   <img src="{% static 'nice7.jpg' %}" width="335" height="200px">
+                </div>
+                <div class="column-66"><br><br>
+                  <h1 class="xlarge-font"><b>리드</b></h1>
+                  <h1 class="large-font" style="color:red;"><b>높은 곳을 오르고 싶다면?</b></h1>
+                  <p style ="font-size:20px"><span style="font-size:24px">높은 곳을 원하는 그대여 리드를 택해라.</span> 리드는 볼더링과 다르게 줄을 연결해서 높은 곳으로 올라가는 종목이야. 흔히 생각하는 암벽등반과 비슷하다고 생각하면 돼. <br><span style ="font-size:24px">여기서 잠깐!</span><br> 리드는 높은 곳에 오르는 만큼 안전을 위해서 중간중간에 위치한 안전고리에 로프를 꼭 걸어줘야한다는 점 잊지마.</p>
+                </div>
+              </div>
+            </div>
+            <div class="container">
+              <div class="row">
+                <div class="column-66">
+                  <h1 class="xlarge-font"><b>스피드</b></h1>
+                  <h1 class="large-font" style="color:MediumSeaGreen;"><b>누구보다 빠르게 난 남들과는 다르게</b></h1>
+                  <p style ="font-size:20px"><span style="font-size:36px">속도는 영어로 SPEED!</span> 다른 종목들 역시 마찬가지로 시간을 재서 경기를 하지만, 스피드는 그 중에서도 독보적이야. 15m 높이의 암벽을 오르는데 걸리는 시간이 10초가 안 돼. 리드와 비슷하게 안전장비를 차고 올라가지만 몇 가지 차이점이 있어. 스피드는 홀드가 언제, 어디서 경기를 하던 홀드의 위치가 정해져 있어. 그래서 그 길만 연습하면 돼.</p>
+            
+                </div>
+                <div class="column-33">
+                    <img src="{% static 'speed.jpg' %}" width="335" height="auto" >
+                    <br>
+                    <img src="{% static 'nice8.jpg' %}" width="335" height="auto">
+                </div>
+              </div>
+            </div>
+            </div>
+
+         
+        </div>
+        <br>
+        <hr>
+        <br>
+        
+        <div class="container">
+            <div class="feature" id = "feature">
+                 <h1 class="heading" style="font-size:48px">그렇다면 클라이밍이 왜 좋을까?</h1><br><br>
+                  <p style="font-size: 30px">자, 앞에서는 클라이밍이라는 운동에 어떤 종목이 들어있는지에 대해 알아봤어. 그렇다면 이제는 클라이밍이 왜 좋은지. 어떤 효과가 있는지에 대해 알아보자.</p>
+                <ul>
+                    <li class="blue"><h4>대중성</h4></li>
+                    <p style ="font-size: 20px">암벽등반의 절벽을 생각하면, 클라이밍에 입문하기 어려울거야. 높이도 무섭고 절벽까지 가기도 어렵기 때문이지. 하지만 스포츠 클라이밍은 그 점을 보완하여 집 주변에서 편안하게 즐길 수 있다는 장점이 있어.</p>
+                    <li class="blue"><h4>편리성</h4></li>
+                    <p style ="font-size: 20px">처음부터 톰크루즈처럼 잘 할 필요는 없어. 모든 것은 기초부터 시작해야하는데, 스포츠 클라이밍은 난이도 조절이 쉬워. 그래서 초보자들도 쉽게 배울 수 있는 스포츠야.</p>
+                    <li class="blue"><h4>안전성</h4></li>
+                    <p style ="font-size: 20px">자연 암벽과는 다르게 낙석 및 추락의 위험이 적어. 안전을 고려해서 만든 인공암벽라서 본인만 주의하면 안전해. 재수가 없으면 모르지만</p>
+                    <li class="blue"><h4>그 외의 효과</h4></li>
+                    <p style ="font-size: 20px">클라이밍은 계절, 날씨에 상관 없이 언제든 즐길 수 있어. 겨울이라고 추워서 못하는 경우가 없다는 것이지. 오히려 겨울에는 빙벽등반이라는 새로운 종목을 하는 경우도 있어.
+                    <br>또한 전신운동이기에 몸의 균형과 탄력을 가꾸는데 도움을 주고, 열량 소비가 많아 <BIG><BIG style ="color: #FFCDFF">다이어트</BIG></BIG>에 효과적이야.
+                    <br>이게 또 많은 집중력을 필요로 하는 운동이라 <BIG><BIG style ="color: #FFCDFF">집중력 향상</BIG></BIG>에 도움이 많이 될거야.
+                    <br>위에 사진 보면 알겠지만 남자들 등 멋있지? 클라이밍 하면 <BIG><BIG style ="color: #FFCDFF">멋진 등</BIG></BIG> 근육을 가질 수 있게 될 거야.</p>
+                </ul>
+                <br>
+            </div>
+        </div>
+        <br>
+        <hr>
+        
+        <div class="container">
+            <div class="material" id="material">
+              <h1 class="heading" style="font-size: 48px">준비물</h1><br>
+                <p style ="font-size: 20px">여기에 나와 있는 것과 몸, 그리고 오를 암벽만 있다면 언제 어디서든 클라이밍이 가능해.
+                <br>근력이 받쳐주면 더 좋고.
+                <br> 여기서 가장 중요한 것은 암벽화야. 나머지는 없어도 충분히 오를 수 있지만 암벽화가 없다면 암벽을 오르는데 드는 힘이 배로 들어. 발로 무게중심을 분산시켜줘야 하는데 그게 안 되면 팔에 힘이 많이 들어가게 되거든.
+                <br></p>
+            </div>
+        </div>
+      
+      
+         <div class = "flex-container">
+             <div class="flex-card">
+                    <h5 class = "card-title">암벽화</h5>
+                    <img src = "static/shoe.jpg" class = "card-img-top" alt = "type1">
+                    <p class = "card-text">         
+                    끝이 뾰족하고 전체적으로 휘어져 있는 것이 특징. 발 끝에 힘을 집중하여 벽에 디디기 좋게 디자인 되었다.
+                    </p>  
+                </div>
+                <div class="flex-card">
+                    <h5 class = "card-title" >편한 복장</h5>
+                    <img src = "static/cloth.jpg" class = "card-img-top" alt = "type1" >
+                    <p class = "card-text">         
+                    클라이밍이 전신운동이고 팔다리의 가동범위가 넓어 움직이기에 편한 복장을 입으면 좋다.
+                    </p>  
+                </div>
+                <div class="flex-card">
+                    <h5 class = "card-title" >클라이밍 쵸크</h5>
+                    <img src = "static/powder.jpg" class = "card-img-top" alt = "type1" height= 250px>
+                    <p class = "card-text">         
+                    손의 땀을 제거해 주어 미끄럼 및 부상방지를 도와준다. 역도나 기계체조 등에서도 이용한다.
+                    </p>  
+                </div>
+                <div class="flex-card">
+                    <h5 class = "card-title">클라이밍 테이프</h5>
+                    <img src = "static/tape.jpg" class = "card-img-top" alt = "type1">
+                    <p class = "card-text">
+                      손가락 부상을 방지해주고 직접적으로 닿는 살을 보호해주어 살이 까지는 것을 방지해준다.
+                      </p>      
+                      
+                </div>
+         </div>
+           
+            <div class="container">
+            <div class="finish" id="finish">
+              <h1 class="heading" style="font-size: 48px">마무리</h1><br>
+                <p style ="font-size: 30px">
+                  이정도면 클라이밍에 대해 어느 정도 알았겠지? 사실 클라이밍에 대한 용어라던가 자세에 대한 정보도 여러 가지 적고 싶긴 한데, 양이 너무 많아지고 내가 실력이 부족해서 그건 다음에 기회가 되면 넣도록 할게. 지금까지 봐줘서 고마워. 혹시 클라이밍 할 생각 들면 연락해. 같이 취미생활 하자.
+                </p>
+            </div>
+        </div>
+            
+            
+   
+
+        
+    </section>
+
+
+{% endblock %}
+
+
+
+
+
+
+
+<style type="text/css">
+.pic-container{
+    margin: auto;
+}
+#navbar {
+    height: 30px;
+    width: 850px; 
+        background-color: gray;
+} 
+#navbar ul li {
+    list-style: none;
+    color: white; 
+    background-color: gray;
+    float: left; 
+    line-height: 30px; 
+    vertical-align: middle; 
+    text-align: center;  
+}
+    
+    #navbar .menuLink { 
+    text-decoration:none;
+    color: white;
+    display: block;
+    width: 150px;
+    font-size: 12px;
+    font-weight: bold;
+    font-family: "Trebuchet MS", Dotum, Arial; 
+    }
+    
+    #navbar .menuLink:hover {
+        color: gray;
+    background-color: white
+    }
+    
+     .blue{
+       color:#C0CCFF;
+     }
+    body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #000000;
+  color: white;
+}
+@font-face{
+    font-family: 'SangSangAnt';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_three@1.0/SangSangAnt.woff') format('woff');
+    font-weight: normal; 
+    font-style: normal; 
+}
+@font-face { font-family: 'Goyang'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/Goyang.woff') format('woff'); font-weight: normal; font-style: normal; }
+@font-face
+    { font-family: 'TmonMonsori'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/TmonMonsori.woff') format('woff'); font-weight: normal; font-style: normal; }
+@font-face { font-family: 'Binggrae-Bold'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/Binggrae-Bold.woff') format('woff'); font-weight: normal; font-style: normal; }
+.container{
+    font-family : TmonMonsori;
+}
+.heading{
+    font-family: Binggrae-Bold;
+}
+    .hero-image {
+  background-image: url("static/nice10.jpg");
+  background-color: #cccccc;
+  height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+    .hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+.flex-container{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            margin: 10px 50px 80px;
+           /* justify-content: center;*/
+            justify-content: flex-start;
+             /*  justify-content: flex-end; */
+            align-items: flex-start;
+}
+up-img{
+  display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            margin: 10px 50px 80px;
+           /* justify-content: center;*/
+            justify-content: flex-start;
+             /*  justify-content: flex-end; */
+            align-items: flex-start;
+}
+ .flex-card{
+            display: flex;
+            vspace: 10px;
+            hspace: 10px;
+            flex-direction: column; 
+            border: 1px solid #c0c0c0;
+            margin: auto;
+            width: 250px;           
+            /*height: auto  사이즈에 맞게 줄어듬*/
+            height: 450px;     
+            /* justify-content:flex-start; */
+            justify-content: top;
+            background-color: #4d4d4d;   
+        }
+ .flex-card  .card-title{
+            font-size: 1.5em;
+            padding: 10px;
+            margin-top: 20px;
+            /*align-self: flex-start;*/
+            align-self: center; 
+            /*align-self: flex-end */
+        }
+.flex-card .card-text{
+            padding: 0px 10px 10px;
+            align-self: center;
+        }
+        .card-title {
+          font-family: Goyang;
+          color: #FFCDFF;
+        }
+        .card-text {
+          font-family: Goyang;
+          color: #FFFFFF;
+        }
+        
+footer {
+   position: bottom;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: gray;
+   color: white;
+   text-align: center;
+}
+.flip-box {
+  background-color: transparent;
+  width: 300px;
+  height: 200px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px;
+}
+.flip-box-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+.flip-box:hover .flip-box-inner {
+  transform: rotateY(180deg);
+}
+.flip-box-front, .flip-box-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+.flip-box-front {
+  background-color: #bbb;
+  color: black;
+}
+.flip-box-back {
+  background-color: dodgerblue;
+  color: white;
+  transform: rotateY(180deg);
+}
+* {
+  box-sizing:border-box;
+}
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.container {
+  padding: 64px;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both
+}
+.column-66 {
+  float: left;
+  width: 66.66666%;
+  padding: 20px;
+}
+.column-33 {
+  float: left;
+  width: 33.33333%;
+  padding: 20px;
+}
+.large-font {
+  font-size: 48px;
+}
+.xlarge-font {
+  font-size: 64px
+}
+img {
+  display: block;
+  max-width: 100%;
+  margin: auto;
+}
+.heading{
+  color: #FFFFA9;
+}
+@media screen and (max-width: 1000px) {
+  .column-66,
+  .column-33 {
+    width: 100%;
+    text-align: center;
+  }
+}
+</style>
